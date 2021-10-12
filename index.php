@@ -8,6 +8,14 @@
     <title>Dischi</title>
 </head>
 <body>
-    
+    <?php
+        foreach ($db as $details){
+            echo "<img src={$details['poster']} alt='poster {$details['title']}'>";
+            echo "<h2>" . $details["title"] . "<br>";
+            echo "<h3>" . $details["author"] . "<br>";
+            echo "<h3>" . $details["genre"] . "<br>";
+            echo "<h3>" . $details["year"] . "<br>";
+        }
+    ?>
 </body>
 </html>
